@@ -1,14 +1,17 @@
 package org.example.springsecuritydemo.model;
 
-public class User {
+public class Student {
+
     private int id;
     private String name;
-    private String password;
+    private int age;
+    private int marks;
 
-    public User(int id, String name, String password) {
+    public Student(int id, String name, int age, int marks) {
         this.id = id;
         this.name = name;
-        this.password = password;
+        this.age = age;
+        this.marks = marks;
     }
 
     public int getId() {
@@ -27,16 +30,19 @@ public class User {
         this.name = name;
     }
 
-    public String getPassword() {
-        return password;
+    public int getAge() {
+        return age;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setAge(int age) {
+        this.age = age;
     }
 
+    public int getMarks() {
+        return marks;
+    }
 
-    public String toString() {
-        return "User [id=" + id + ", name=" + name + ", password=" + password + "]";
+    public void setMarks(int marks) {
+        this.marks = marks;
     }
 }
